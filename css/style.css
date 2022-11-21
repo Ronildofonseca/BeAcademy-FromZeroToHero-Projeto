@@ -242,7 +242,7 @@ margin: 20px 0;
 .services{
    padding: 100px 0;
     text-align: center;
-    background-color: var(--color-primary-light);
+    background-color: var(--color-secondary-light);
 }
 .services h2{
 color: var(--color-primary);
@@ -282,13 +282,12 @@ margin-bottom: 10px;
     padding: 100px 0;
     background-color: var(--color-primary);
     height: 100vh;
-    background-image: url(../images/pedir-comida.png);
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 500px;
 }
 .appointment h2{
-    color: var(--color-primary-light);
+    color: var(--color-secondary-light);
     font-weight: 400;
     font-size: 50px;
     margin-bottom: 10px;
@@ -317,14 +316,14 @@ margin-bottom: 10px;
 }
 .appointment .personal-data label {
 display: block;
-color: var(--color-primary-light);
+color: var(--color-secondary-light);
 font-size: 14px;
 margin-bottom: 2px;
 
 }
 .mensagem{
 display: block;
-color: var(--color-primary-light);
+color: var(--color-secondary-light);
 font-size: 14px;
 margin-bottom: 2px
 }
@@ -343,7 +342,7 @@ margin-bottom: 2px
 }
 .appointment button{
     background-color: var(--color-secondary);
-    color: var(--color-primary-light);
+    color: var(--color-secondary-light);
     padding: 15px 40px;
     border: none;
     margin-top: 10px;
