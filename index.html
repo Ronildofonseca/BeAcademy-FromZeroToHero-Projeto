@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https: //fonts.googleapis.com/css2? family= Poppins:wght@100;400;700 & display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <main>
@@ -129,9 +129,13 @@
             <img src="images/saco-de-papel.png" alt="sacoPapel">
             <h4>Semanal</h4>
             <img src="images/head-line-ic.png" alt="Separador">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, ipsam rerum omnis corporis quam sint expedita ipsa delectus rem esse, quibusdam aspernatur eum id error mollitia nobis facere, inventore voluptates.
+            <p class="detailPct">
+                Nosso pacote semanal é composto por 10 refeições, contendo 5 almoços e 5 jantas, que tornará sua dieta prazerosa, com efeito de saciedade e com excelência no sabor.<br>
+                Garantindo uma vida muito mais saudável, com uma nutrição acompanhada por um especialista e um baixo teor de carboidratos!<br>
+                <strong>Não deixe para segunda, a dieta que Low Carb te oferece para todos os dias!</strong>
             </p>
+            <span class="spanDetail">Clique aqui e veja mais detalhes de nosso Pacote Semanal</span> <br>
+            <button class="buttonDetail"><a class="pageDetail" href="#detalhar">Detalhar</a></button>
         </div>
 
         <div class="box">
@@ -139,7 +143,14 @@
             <h4>Quinzenal</h4>
             <img src="images/head-line-ic.png" alt="Separador">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, ipsam rerum omnis corporis quam sint expedita ipsa delectus rem esse, quibusdam aspernatur eum id error mollitia nobis facere, inventore voluptates.
+                <p class="detailPct">
+                    Nosso pacote quinzenal é composto por 20 refeições, contendo 10 almoços e 10 jantas, que tornará sua dieta prazerosa, com efeito de saciedade e com excelência no sabor. <br>
+                    Garantindo uma vida muito mais saudável, com uma nutrição acompanhada por um especialista e um baixo teor de carboidratos! <br> 
+                    <strong>Não deixe para segunda, a dieta que Low Carb te oferece para todos os dias!</strong>
+                </p>
+                
+                <span class="spanDetail">Clique aqui e veja mais detalhes de nosso Pacote Quinzenal</span> <br>
+                <button class="buttonDetail"><a class="pageDetail" href="#detalhar">Detalhar</a></button>
             </p>
         </div>
 
@@ -148,11 +159,53 @@
             <h4>Mensal</h4>
             <img src="images/head-line-ic.png" alt="Separador">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, ipsam rerum omnis corporis quam sint expedita ipsa delectus rem esse, quibusdam aspernatur eum id error mollitia nobis facere, inventore voluptates.
+                <p class="detailPct">
+                    Nosso pacote mensal é composto por 40 refeições, contendo 20 almoços e 20 jantas, que tornará sua dieta prazerosa, com efeito de saciedade e com excelência no sabor. <br>
+                    Garantindo uma vida muito mais saudável, com uma nutrição acompanhada por um especialista e um baixo teor de carboidratos! <br>
+                    <strong>Não deixe para segunda, a dieta que Low Carb te oferece para todos os dias!</strong>
+                </p>
+                
+                <span class="spanDetail">Clique aqui e veja mais detalhes de nosso Pacote Mensal</span> <br>
+                <button class="buttonDetail"><a class="pageDetail" href="#detalhar">Detalhar</a></button>
             </p>
         </div>
     </div>
+    
    </section>
+
+   <section id="detalhar"class="sectionCard">
+    
+    <h2 class="titleCard">Pacotes Detalhados</h2>
+        <p class="textCard">Pacotes que cabem no seu bolso e que se adequam a sua necessidade!</p>
+    <section class="containerCard">
+    <div class="dadosCard">
+        
+        <label class="tipoVenda" for="">Tipo de Pacote</label>
+        <select class="tipoVenda-1" name="typeSale" id="typeSale">
+            <option value="semanal">Semanal</option>
+            <option value="quinzenal" >Quinzenal</option>
+            <option value="mensal" >Mensal</option>
+        </select> <br> <br>
+       
+        <label class="descritionValue" for="">Quantidade de Pacotes
+        </label>  
+        <input class="inputValue" name="detalhar" id="jurosPorParcela" type="text" placeholder="Digite a  quantidade de pacotes">
+        <button class="simuladorButton" name="detalhar" onclick="detalhar()">Detalhar</button>
+    </div>
+    <div class="dadosCard2">
+        <aside>
+            <h1 class="titleDetail">Menu</h1>
+            <p> <span id="textItem2"></span></p>
+            <p class="valueCard">
+                <span id="textItem"></span>
+            </p>
+            <p class="valueCard2">
+                <span id="textItem3"></span>
+            </p>
+        </aside>
+    </div>
+    </section>
+</section>
 
    <section id="appointment" class="appointment">
     <div class="container">
@@ -199,7 +252,7 @@
 
    <section id="gallery" class="gallery">
     <div class="container">
-        <h2>GALERIA DE FOTOS</h2>
+        <h2>Nossos Pratos</h2>
        
         <div class="gallery-wrapper">
             <div>
