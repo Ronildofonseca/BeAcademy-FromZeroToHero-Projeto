@@ -16,28 +16,24 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family:sans-serif;
 }
 
 
 
-.container {
-    width: 1170px;
-    margin: 0 auto;
-
-}
 
 /********
 HOME
 *********/
+
+
+  
 .home {
     position: relative;
     background-size: cover;
     background-image: url(../images/home-low.png);
     height: 100vh;
     background-attachment: fixed;
-
-
 
 }
 
@@ -107,49 +103,8 @@ HOME
     background: var(--color-primary-light);
     position: fixed;
     margin-left: 5px;
+    
 }
-
-@media (max-width: 700px) {
-    .container {
-        width: 900px;
-        margin: 0 auto;
-    }
-
-    .home {
-
-
-        background-image: url(../images/home-low.png);
-        background-attachment: fixed;
-        width: 500px;
-
-
-
-    }
-
-    .home .header .nav ul li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80px;
-
-
-    }
-
-    .home .header .nav ul li a {
-        color: white;
-        background: var(--color-primary);
-        border-radius: 15px 0;
-        width: 50%;
-        text-align: center;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-size: 12px;
-        font-weight: bold;
-        padding: 10px;
-    }
-
-}
-
 
 /************
 *HOME -BANNER
@@ -173,9 +128,6 @@ HOME
     text-shadow: var(--color-primary-light) 0.02em 0.02em;
 }
 
-.home .banner1 {
-    font-size: 12px;
-}
 
 .home .banner span {
     display: block;
@@ -217,6 +169,8 @@ HOME
 
 .about .container {
     display: flex;
+    
+
 }
 
 .about .timing {
@@ -346,6 +300,7 @@ HOME
     padding: 50px 40px;
     margin: 30px;
 }
+
 
 .services .box h4 {
     color: var(--color-secondary);
@@ -551,7 +506,7 @@ HOME
 .appointment {
     padding: 100px 0;
     background-color: var(--color-primary);
-    background-size: 500px;
+    
 }
 
 .appointment h2 {
@@ -568,7 +523,8 @@ HOME
 }
 
 .appointment form {
-    margin-top: 80px;
+    margin: 80px  30px 0;
+
 }
 
 .appointment .personal-data {
@@ -639,19 +595,6 @@ HOME
 
 }
 
-.appointment .toast {
-    display: inline-block;
-    position: absolute;
-    left: -100%;
-    bottom: 30px;
-    background-color: var(--color-primary-light);
-    border: 2px solid var(--color-primary);
-    border-radius: 6px;
-    padding: 15px;
-    color: var(--color-secondary);
-    transition: all 600ms ease;
-
-}
 
 /***********
 *GALLERY
@@ -663,6 +606,7 @@ HOME
 
     background-color: var(--color-secondary-light);
     align-items: center;
+    
 
 
 }
@@ -671,18 +615,22 @@ HOME
     color: var(--color-primary);
     font-weight: 400;
     font-size: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     text-align: center;
 }
+.container{
+    padding: 30px 0;
 
+}
 .gallery .container .bannerImage {
 
     margin-left: 10%;
     width: 80%;
-    height: 35vw;
+    height: 80vh;
     position: relative;
     align-items: center;
-    border: 10px solid var(--color-secondary);
+    border: 3px solid var(--color-secondary);
+    border-radius: 10px;
 
 
 }
@@ -694,6 +642,7 @@ HOME
     position: absolute;
     object-fit: cover;
     transition: opacity 2000ms;
+    border-radius: 10px;
 
 }
 
@@ -709,7 +658,7 @@ HOME
 .location {
     background-image: url(../images/home=lowCarb.jpeg);
     background-size: cover;
-    padding: 100px 0;
+    padding: 30px 0;
 }
 
 .location .head {
@@ -729,7 +678,7 @@ HOME
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 10px;
+    margin-right: 15px;
     padding: 10px;
     width: 50px;
     height: 50px;
@@ -763,7 +712,59 @@ HOME
     background-color: var(--color-primary);
     color: white;
     padding: 40px;
-    margin-top: 30px;
     text-align: center;
     font-size: 12px;
+}
+
+@media(max-width:767px){
+
+
+.header{
+    position: relative;
+    width: 100vh;
+}
+.home .banner {
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: var(--color-primary);
+    align-items: center;
+    width: 100%;
+    height: 100%;
+   
+ }
+
+.container{
+    flex-direction: column;
+    width: 100%;
+}
+.about .timing {
+    width: 100%;
+    height: 30%;
+    padding: 20px;
+    background-image: url(../images/marmitas.jpg);
+    position: relative;
+    margin-top: 50px;
+    grid-area: aside;
+
+}
+.experience .text{
+    flex-wrap: wrap;
+   
+}
+.services .boxes{
+    flex-wrap: wrap;
+    display: block;
+}
+
+.services .box {
+    border: 3px solid var(--color-primary);
+    padding: 30px 10px;
+    margin: 15px;
+}
+.textItem2{
+    font-size: 10px;
+}
+
 }

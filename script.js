@@ -13,7 +13,7 @@ function detalhar() {
     const valueMensal = '1252.00'
 
 
-
+  
 
     switch (opcaoTexto1) {
 
@@ -307,6 +307,8 @@ function start() {
 
 window.addEventListener("load", start)
 
+/**** Promises e try/catch (Formulário com requisição do via Cep) ****/
+
 const myButton = document.querySelector('.my-button')
 const getCep = document.querySelector('.get-cep')
 
@@ -314,34 +316,29 @@ myButton.addEventListener('click', () => {
     let value = getCep.value
     getAddress(value)
     
-})*/
+})
 
-
-//**** Promises e try/catch (Formulário com requisição do via Cep) ****//
-
-
-
-async function getAddress(cep) {
+async function getAddress(cep){
     try {
         let response = await fetch(`https://viacep.com.br/ws/${cep}/json/`)
-
+        
         let mapa = await response.json()
         console.log(mapa)
-
+        
         const logradouro = document.querySelector('.logradouro')
         const bairro = document.querySelector('.bairro')
         const cidade = document.querySelector('.cidade')
-
-
+        
+        
         logradouro.value = mapa.logradouro
         bairro.value = mapa.bairro
         cidade.value = mapa.localidade
-
+        
     } catch (error) {
-        throw new Error('Erro na requisição')
-
-
+        throw new Error ('Erro na requisição')
+        
+        
     }
 }
-
+ 
 
