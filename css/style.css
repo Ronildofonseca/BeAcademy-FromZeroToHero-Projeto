@@ -16,7 +16,7 @@
 }
 
 body {
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
 
 
@@ -27,7 +27,7 @@ HOME
 *********/
 
 
-  
+
 .home {
     position: relative;
     background-size: cover;
@@ -103,7 +103,7 @@ HOME
     background: var(--color-primary-light);
     position: fixed;
     margin-left: 5px;
-    
+
 }
 
 /************
@@ -169,7 +169,7 @@ HOME
 
 .about .containerAbout {
     display: flex;
-    
+
 
 }
 
@@ -404,7 +404,6 @@ HOME
     text-align: center;
     font-size: 14px;
     font-weight: bold;
-
     color: var(--color-primary);
 
 }
@@ -506,7 +505,7 @@ HOME
 .appointment {
     padding: 100px 0;
     background-color: var(--color-primary);
-    
+
 }
 
 .appointment h2 {
@@ -523,7 +522,7 @@ HOME
 }
 
 .appointment form {
-    margin: 80px  30px 0;
+    margin: 80px 30px 0;
 
 }
 
@@ -606,7 +605,7 @@ HOME
 
     background-color: var(--color-secondary-light);
     align-items: center;
-    
+
 
 
 }
@@ -618,10 +617,12 @@ HOME
     margin-bottom: 30px;
     text-align: center;
 }
-.container{
+
+.container {
     padding: 30px 0;
 
 }
+
 .gallery .container .bannerImage {
 
     margin-left: 10%;
@@ -716,54 +717,61 @@ HOME
     font-size: 12px;
 }
 
-@media(min-width:481px) and (max-width:767px){
+@media(min-width:481px) and (max-width:767px) {
     .home {
         position: relative;
         background-size: cover;
         background-image: url(../images/home-low.png);
         height: 100vh;
         background-attachment: fixed;
-    
+
     }
-    
+
     .home .headerHome {
         padding: 30px 0;
-    
+
     }
-    
+
     .home .headerHome .navHome {
         display: block;
         justify-content: center;
-        
-    
+
+
+
     }
-    
+
     .home .headerHome .navHome ul {
         display: flex;
         list-style: none;
         width: 100vh;
-        margin: 0 10px;
-    
-    
+        margin: auto;
+
+
     }
-    
+
     .home .headerHome .navHome ul li {
-        display: flex;
+        display: block;
         justify-content: center;
         align-items: center;
-        width: 30vh;
         margin-right: 10px;
-    
-    
+
+
+
+
     }
-    
+
     .home .headerHome .navHome ul li .logo {
         width: 50px;
         border: 3px solid var(--color-primary);
         border-radius: 15px 0;
         padding: 5px;
     }
-    
+
+    .home .headerHome .navHome .logo {
+        margin: 0 20px;
+
+    }
+
     .home .headerHome .navHome ul li a {
         color: white;
         background: var(--color-primary);
@@ -772,21 +780,10 @@ HOME
         text-align: center;
         text-transform: uppercase;
         text-decoration: none;
-        font-size: 12px;
+        font-size: 10px;
         font-weight: bold;
-        padding: 10px;
-    
-    }
-    
-    .home .headerHome .navHome ul li a:hover {
-        border-bottom: 2px solid var(--color-primary-light);
-        color: var(--color-primary-light);
-    
-    }
-    
-    .home .headerHome .navHome .logo {
-        margin: 0 20px;
-    
+        padding: 5px;
+
     }
 
     .home .banner {
@@ -795,34 +792,35 @@ HOME
         left: 50%;
         color: var(--color-primary);
         text-align: center;
- 
+
     }
-    
+
     .home .banner .slogan {
         text-shadow: var(--color-primary-light) 0.02em 0.02em;
         font-size: 100px;
     }
-    
-    
+
+
     .home .banner span {
         display: block;
     }
-    
+
     .home .banner .slogan1 {
         color: var(--color-primary);
         background: var(--color-primary-light);
         font-weight: bold;
         padding: 10px;
+        width: 100%;
         border-radius: 15px 0;
         text-transform: uppercase;
         letter-spacing: 4px;
         margin-bottom: 30px;
         font-size: 16px;
-        
+
     }
-    
-    
-    
+
+
+
     .home .banner .slogan2 {
         margin-bottom: 30px;
         background: var(--color-primary-light);
@@ -832,68 +830,11 @@ HOME
         letter-spacing: 3px;
     }
 
-.containerAbout{
-    flex-direction: column;
-    width: 100%;
-}
-.about .timing {
-    width: 100%;
-    height: 30%;
-    padding: 20px;
-    background-image: url(../images/marmitas.jpg);
-    position: relative;
-    margin-top: 50px;
-    grid-area: aside;
-
-}
-.experience .text{
-    flex-wrap: wrap;
-   
-}
-.services .boxes{
-    flex-wrap: wrap;
-    display: block;
-}
-
-.services .box {
-    border: 3px solid var(--color-primary);
-    padding: 30px 10px;
-    margin: 15px;
-}
-.containerCard{
-    display: block;
-    align-items: center;
-}
-.textItem2{
-    font-size: 12px;
-}
-
-
-}
-
-@media(max-width:368px){
-
-
-    .headerHome{
-        position: relative;
-        width: 100vh;
-    }
-    .home .banner {
-       
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        color: var(--color-primary);
-        align-items: center;
-        width: 100%;
-        height: 100%;
-       
-     }
-    
-    .container{
+    .containerAbout {
         flex-direction: column;
         width: 100%;
     }
+
     .about .timing {
         width: 100%;
         height: 30%;
@@ -902,24 +843,218 @@ HOME
         position: relative;
         margin-top: 50px;
         grid-area: aside;
-    
+
     }
-    .experience .text{
+
+    .experience .text {
         flex-wrap: wrap;
-       
+
     }
-    .services .boxes{
+
+    .services .boxes {
         flex-wrap: wrap;
         display: block;
     }
-    
+
     .services .box {
         border: 3px solid var(--color-primary);
         padding: 30px 10px;
         margin: 15px;
     }
-    .textItem2{
-        font-size: 10px;
+
+    .containerCard {
+        display: block;
+        align-items: center;
     }
+
+    .textItem2 {
+        font-size: 12px;
+    }
+
+
+}
+
+@media(max-width:480px) {
+
+        .home {
+            position: relative;
+            background-size: cover;
+            background-image: url(../images/home-low.png);
+            height: 100vh;
+            background-attachment: fixed;
     
+        }
+    
+        .home .headerHome {
+            padding: 30px 0;
+    
+        }
+    
+        .home .headerHome .navHome {
+            display: block;
+            justify-content: center;
+    
+    
+    
+        }
+    
+        .home .headerHome .navHome ul {
+            display: flex;
+            list-style: none;
+            width: 100vh;
+            margin: auto;
+    
+    
+        }
+    
+        .home .headerHome .navHome ul li {
+            display: block;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            width: 40px;
+            height: 30px;
+    
+    
+    
+    
+        }
+    
+        .home .headerHome .navHome ul li .logo {
+            display: none;
+            border: 3px solid var(--color-primary);
+            border-radius: 15px 0;
+            padding: 5px;
+            width: 40px;
+            height: 30px;
+        }
+    
+        .home .headerHome .navHome .logo {
+            margin: 0 20px;
+    
+        }
+    
+        .home .headerHome .navHome ul li a {
+            color: white;
+            background: var(--color-primary);
+            border-radius: 15px 0;
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 8px;
+            font-weight: bold;
+            padding: 5px;
+    
+        }
+    
+        .home .banner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            color: var(--color-primary);
+            text-align: center;
+    
+        }
+    
+        .home .banner .slogan {
+            text-shadow: var(--color-primary-light) 0.02em 0.02em;
+            font-size: 80px;
+        }
+    
+    
+        .home .banner span {
+            display: block;
+        }
+    
+        .home .banner .slogan1 {
+            color: var(--color-primary);
+            background: var(--color-primary-light);
+            font-weight: bold;
+            padding: 10px;
+            width: 100%;
+            border-radius: 15px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            font-size: 14px;
+    
+        }
+    
+    
+    
+        .home .banner .slogan2 {
+            margin-bottom: 30px;
+            background: var(--color-primary-light);
+            border-radius: 0 15px;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+    
+        .containerAbout {
+            flex-direction: column;
+            width: 100%;
+        }
+    
+        .about .timing {
+            width: 100%;
+            height: 30%;
+            padding: 20px;
+            background-image: url(../images/marmitas.jpg);
+            position: relative;
+            margin-top: 50px;
+            grid-area: aside;
+    
+        }
+    
+        .experience .text {
+            flex-wrap: wrap;
+    
+        }
+    
+        .services .boxes {
+            flex-wrap: wrap;
+            display: block;
+        }
+    
+        .services .box {
+            border: 3px solid var(--color-primary);
+            padding: 30px 10px;
+            margin: 15px;
+        }
+    
+        .containerCard {
+            display: block;
+            align-items: center;
+        }
+    
+        .textItem2  {
+            font-size: 10px;
+        }
+        .textItem {
+            font-size: 14px;
+        }
+
+        .appointment .personal-data {
+            display: block;
+            justify-content: space-between;
+            margin-bottom: 10px;
+           
+        }
+        .appointment .personal-data .input-wrapper{
+            width: 90%;
+        }
+
+        .appointment button {
+            background-color: var(--color-secondary-light);
+            color: var(--color-primary);
+            padding: 10px 15px;
+            border: none;
+            margin-top: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 5px;
+
     }
+}

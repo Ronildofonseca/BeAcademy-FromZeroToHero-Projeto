@@ -282,7 +282,7 @@ function mascaraTelefone(event) {
 //**** Loop(Carousel de images) ****//
 
 
-/*
+
 let images = document.querySelectorAll("#banner-holder img")
 currentImage = 0,
 max = images.length
