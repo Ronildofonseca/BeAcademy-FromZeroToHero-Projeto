@@ -1,0 +1,1 @@
+export default (arr, fn) => arr.map(fn).join("");

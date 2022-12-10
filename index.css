@@ -1,0 +1,948 @@
+@charset "UTF-8";
+
+:root {
+  --color-primary: #8c0e03;
+  --color-secondary: #d92b04;
+  --color-primary-light: #d97904;
+  --color-secondary-light: #d9d9d9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+input[disabled] {
+  background: #ffffff;
+  color: #999;
+  font-style: italic;
+}
+
+/********
+HOME
+*********/
+
+.home {
+  position: relative;
+  background-size: cover;
+  background-image: url(../images/home-low.png);
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.home .headerHome {
+  padding: 30px 0;
+}
+
+.home .headerHome .navHome {
+  display: flex;
+  justify-content: center;
+}
+
+.home .headerHome .navHome ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+}
+
+.home .headerHome .navHome ul li {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  max-width: 200px;
+}
+
+.home .headerHome .navHome ul li:first-of-type {
+  margin-left: auto;
+}
+
+.home .headerHome .navHome ul li:last-of-type {
+  margin-right: auto;
+}
+
+.home .headerHome .navHome ul li .logo {
+  width: 100px;
+  border: 3px solid var(--color-primary);
+  border-radius: 15px 0;
+  padding: 10px;
+}
+
+.home .headerHome .navHome ul li a {
+  color: white;
+  background: var(--color-primary);
+  border-radius: 15px 0;
+  width: 90%;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.home .headerHome .navHome ul li a:hover {
+  border-bottom: 2px solid var(--color-primary-light);
+  color: var(--color-primary-light);
+}
+
+.home .headerHome .navHome .logo {
+  margin: 0 50px;
+}
+
+.buttonReturn {
+  width: 30px;
+  border: 1px solid var(--color-secondary-light);
+  border-radius: 50%;
+  background: var(--color-primary-light);
+  position: fixed;
+  margin-left: 5px;
+}
+
+/************
+*HOME -BANNER
+*************/
+.home .banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 270px;
+  width: 778px;
+  margin-left: -385px;
+  margin-top: -75px;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.home .banner .slogan {
+  text-shadow: var(--color-primary-light) 0.02em 0.02em;
+}
+
+.home .banner span {
+  display: block;
+}
+
+.home .banner .slogan1 {
+  color: var(--color-primary);
+  background: var(--color-primary-light);
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.home .banner h1 {
+  font-size: 120px;
+}
+
+.home .banner .slogan2 {
+  margin-bottom: 30px;
+  background: var(--color-primary-light);
+  border-radius: 0 15px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+/*******
+*ABOUT
+********/
+
+.about {
+  background-color: var(--color-primary);
+}
+
+.about .containerAbout {
+  display: flex;
+}
+
+.about .timing {
+  width: 33%;
+  padding: 20px;
+  background-image: url(../images/marmitas.jpg);
+  position: relative;
+  top: -50px;
+}
+
+.about .timing .overley {
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.about .timing .icone1 {
+  width: 50px;
+}
+
+.about .timing .text {
+  margin: 10px 0;
+}
+
+.about .timing .text:after {
+  content: "•";
+  color: white;
+  display: block;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.about .timing .text:last-of-type:after {
+  content: "|";
+}
+
+.horario {
+  color: var(--color-secondary-light);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--color-primary-light);
+  width: fit-content;
+  margin: 0 auto 30px auto;
+  font-size: 30px;
+}
+
+.about .timing .text h4 {
+  margin-top: 20px;
+  color: var(--color-secondary-light);
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.about .timing span {
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  display: block;
+}
+
+.about .experience {
+  width: 66%;
+  color: white;
+  margin-left: 7%;
+  margin-top: 100px;
+}
+
+.about .experience h2 {
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.about .experience h2:after {
+  display: block;
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: #a38f78;
+  margin: 20px 0;
+}
+
+.about .experience .text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about .experience .text p {
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-weight: 100;
+}
+
+/*******
+*Services
+********/
+
+.services {
+  padding: 100px 0;
+  text-align: center;
+  background-color: var(--color-secondary-light);
+}
+
+.services h2 {
+  color: var(--color-primary);
+  font-weight: 400;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.services .boxes {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services .box {
+  border: 3px solid var(--color-primary);
+  padding: 50px 40px;
+  margin: 30px;
+}
+
+.services .box h4 {
+  color: var(--color-secondary);
+  margin-top: 30px;
+}
+
+.services .box .detailPct {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.services .box .spanDetail {
+  color: var(--color-primary);
+}
+
+.services .box .buttonDetail {
+  background-color: var(--color-secondary);
+  color: var(--color-secondary-light);
+  padding: 5px 15px;
+  border: none;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.services .box .buttonDetail:hover {
+  transition: 1ms;
+  background: var(--color-primary);
+}
+
+.services .box .pageDetail {
+  color: var(--color-secondary-light);
+  text-decoration: none;
+}
+
+/***********
+*DetailPct
+************/
+
+.sectionCard {
+  background: var(--color-primary-light);
+  padding: 10px;
+}
+
+.titleCard {
+  color: var(--color-secondary-light);
+  text-align: center;
+  font-weight: 400;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.textCard {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--color-primary);
+  margin-bottom: 50px;
+}
+
+.containerCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+}
+
+.dadosCard {
+  padding: 10px;
+  margin: 20px;
+  width: 80%;
+}
+
+.dadosCard2 {
+  padding: 15px;
+  margin: 10px;
+  background: white;
+  border-radius: 10px;
+  height: 500px;
+  position: relative;
+  width: 90%;
+}
+
+.dadosCard2 .titleDetail {
+  font-size: 50px;
+}
+
+.dadosCard2 aside {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.dadosCard2 aside .valueCard {
+  color: var(--color-secondary);
+  font-size: 25px;
+  padding-top: 20px;
+}
+
+.simuladorButton {
+  background: var(--color-secondary);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  width: 40%;
+}
+
+.simuladorButton:hover {
+  background: var(--color-primary);
+}
+
+.descritionValue {
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.inputValue {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 30px;
+  padding: 0 7px 7px;
+  position: relative;
+  width: 80%;
+}
+
+.inputValue::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.inputValue:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.tipoVenda {
+  font-weight: bold;
+  color: var(--color-primary);
+  padding-top: 20px;
+}
+
+.tipoVenda-1 {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  border-radius: 5px;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 30px;
+  padding: 0 7px 7px;
+  position: relative;
+  width: 80%;
+}
+
+.tipoVenda-1:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  background: var(--color-primary);
+}
+
+/***********
+*Appointement
+************/
+
+.appointment {
+  padding: 100px 0;
+  background-color: var(--color-primary);
+}
+
+.appointment h2 {
+  color: var(--color-secondary-light);
+  font-weight: 400;
+  font-size: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.appointment img {
+  margin: 0 auto;
+  display: block;
+}
+
+.appointment form {
+  margin: 80px 30px 0;
+}
+
+.appointment .personal-data {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.appointment .input-wrapper {
+  width: 50%;
+  margin-right: 50px;
+}
+
+.appointment .input-wrapper .label-wrapper {
+  font-weight: bold;
+}
+
+.appointment .input-wrapper:last-of-type {
+  margin-right: 0;
+}
+
+.appointment .personal-data label {
+  display: block;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.appointment .personal-data input,
+.appointment .personal-data select,
+.appointment textarea {
+  padding: 10px;
+  outline: none;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.appointment textarea {
+  height: 100px;
+}
+
+.appointment button {
+  background-color: var(--color-secondary-light);
+  color: var(--color-primary);
+  padding: 15px 40px;
+  border: none;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.appointment button:hover {
+  transition: 1ms;
+  background: var(--color-secondary);
+  color: var(--color-secondary-light);
+}
+
+/***********
+*GALLERY
+************/
+
+.gallery {
+  background-color: var(--color-secondary-light);
+  align-items: center;
+}
+
+.gallery h2 {
+  color: var(--color-primary);
+  font-weight: 400;
+  font-size: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.container {
+  padding: 30px 0;
+}
+
+.gallery .container .banner-image {
+  margin-left: 10%;
+  width: 80%;
+  height: 80vh;
+  position: relative;
+  align-items: center;
+  border: 3px solid var(--color-secondary);
+  border-radius: 10px;
+}
+
+.gallery .container .banner-image img {
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  transition: opacity 2000ms;
+  border-radius: 10px;
+}
+
+.gallery .container .banner-image img.active {
+  opacity: 1;
+}
+
+/**********
+*LOCATION
+***********/
+
+.location {
+  background-image: url(../images/home=lowCarb.jpeg);
+  background-size: cover;
+  padding: 30px 0;
+}
+
+.location .head {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-primary);
+  padding: 40px;
+  width: 100%;
+}
+
+.location .head .info {
+  display: flex;
+  align-items: center;
+}
+
+.location .head .info .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--color-primary-light);
+  border-radius: 100%;
+}
+
+.location .head .info .text span {
+  display: block;
+  font-size: 13px;
+}
+
+.location .head .info .text span:first-child {
+  color: silver;
+}
+
+.location .head .info .text span:last-child {
+  color: white;
+}
+
+.location .map {
+  width: 100%;
+}
+
+.location .map iframe {
+  width: 100%;
+}
+
+.footer {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 40px;
+  text-align: center;
+  font-size: 12px;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .home {
+    position: relative;
+    background-size: cover;
+    background-image: url(../images/home-low.png);
+    height: 100vh;
+    background-attachment: fixed;
+  }
+
+  .home .headerHome {
+    padding: 30px 0;
+  }
+
+  .home .headerHome .navHome {
+    display: block;
+    justify-content: center;
+  }
+
+  .home .headerHome .navHome ul {
+    display: flex;
+    list-style: none;
+    width: 100vh;
+    margin: auto;
+  }
+
+  .home .headerHome .navHome ul li {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  .home .headerHome .navHome ul li .logo {
+    width: 50px;
+    border: 3px solid var(--color-primary);
+    border-radius: 15px 0;
+    padding: 5px;
+  }
+
+  .home .headerHome .navHome .logo {
+    margin: 0 20px;
+  }
+
+  .home .headerHome .navHome ul li a {
+    color: white;
+    background: var(--color-primary);
+    border-radius: 15px 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px;
+  }
+
+  .home .banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: var(--color-primary);
+    text-align: center;
+  }
+
+  .home .banner .slogan {
+    text-shadow: var(--color-primary-light) 0.02em 0.02em;
+    font-size: 100px;
+  }
+
+  .home .banner span {
+    display: block;
+  }
+
+  .home .banner .slogan1 {
+    color: var(--color-primary);
+    background: var(--color-primary-light);
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+
+  .home .banner .slogan2 {
+    margin-bottom: 30px;
+    background: var(--color-primary-light);
+    border-radius: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+
+  .containerAbout {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .about .timing {
+    width: 100%;
+    height: 30%;
+    padding: 20px;
+    background-image: url(../images/marmitas.jpg);
+    position: relative;
+    margin-top: 50px;
+    grid-area: aside;
+  }
+
+  .experience .text {
+    flex-wrap: wrap;
+  }
+
+  .services .boxes {
+    flex-wrap: wrap;
+    display: block;
+  }
+
+  .services .box {
+    border: 3px solid var(--color-primary);
+    padding: 30px 10px;
+    margin: 15px;
+  }
+
+  .containerCard {
+    display: block;
+    align-items: center;
+  }
+
+  .textItem2 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    position: relative;
+    background-size: cover;
+    background-image: url(../images/home-low.png);
+    height: 100vh;
+    background-attachment: fixed;
+  }
+
+  .home .headerHome {
+    padding: 30px 0;
+  }
+  .home .headerHome .navHome ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+  }
+  
+  .home .headerHome .navHome ul li {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    max-width: 200px;
+  }
+  .home .headerHome .navHome {
+    display: block;
+    justify-content: center;
+  }
+
+  .home .headerHome .navHome ul li .logo {
+    display: none;
+    border: 3px solid var(--color-primary);
+    border-radius: 15px 0;
+    padding: 5px;
+    width: 40px;
+    height: 30px;
+  }
+
+  .home .headerHome .navHome .logo {
+    margin: 0 20px;
+  }
+
+  .home .headerHome .navHome ul li a {
+    color: white;
+    background: var(--color-primary);
+    border-radius: 15px 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 8px;
+    font-weight: bold;
+    padding: 5px;
+  }
+
+  .home .banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: var(--color-primary);
+    text-align: center;
+    flex: 1;
+  }
+
+  .home .banner .slogan {
+    text-shadow: var(--color-primary-light) 0.02em 0.02em;
+    font-size: 80px;
+    
+  }
+
+  .home .banner span {
+    display: block;
+  }
+
+  .home .banner .slogan1 {
+    color: var(--color-primary);
+    background: var(--color-primary-light);
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+
+  .home .banner .slogan2 {
+    margin-bottom: 30px;
+    background: var(--color-primary-light);
+    border-radius: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+
+  .containerAbout {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .about .timing {
+    width: 100%;
+    height: 30%;
+    padding: 20px;
+    background-image: url(../images/marmitas.jpg);
+    position: relative;
+    margin-top: 50px;
+    grid-area: aside;
+  }
+
+  .experience .text {
+    flex-wrap: wrap;
+  }
+
+  .services .boxes {
+    flex-wrap: wrap;
+    display: block;
+  }
+
+  .services .box {
+    border: 3px solid var(--color-primary);
+    padding: 30px 10px;
+    margin: 15px;
+  }
+
+  .containerCard {
+    display: block;
+    align-items: center;
+  }
+
+  .textItem2 {
+    font-size: 10px;
+  }
+  .textItem {
+    font-size: 14px;
+  }
+
+  .appointment .personal-data {
+    display: block;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .appointment .personal-data .input-wrapper {
+    width: 90%;
+  }
+
+  .appointment button {
+    background-color: var(--color-secondary-light);
+    color: var(--color-primary);
+    padding: 10px 15px;
+    border: none;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+ 
+}
