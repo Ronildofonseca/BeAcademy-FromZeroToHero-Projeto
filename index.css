@@ -813,7 +813,7 @@ input[disabled] {
     display: flex;
     flex: 1;
     justify-content: center;
-    max-width: 200px;
+    max-width: 100px;
   }
   .home .headerHome .navHome {
     display: block;
@@ -821,7 +821,7 @@ input[disabled] {
   }
 
   .home .headerHome .navHome ul li .logo {
-    display: none;
+    
     border: 3px solid var(--color-primary);
     border-radius: 15px 0;
     padding: 5px;
@@ -849,7 +849,6 @@ input[disabled] {
   .home .banner {
     position: absolute;
     top: 50%;
-    left: 50%;
     color: var(--color-primary);
     text-align: center;
     flex: 1;
@@ -862,15 +861,17 @@ input[disabled] {
   }
 
   .home .banner span {
-    display: block;
+    display: relative;
+    min-width: 100px;
+    flex: 1;
   }
 
   .home .banner .slogan1 {
     color: var(--color-primary);
     background: var(--color-primary-light);
+    width: 100px;
     font-weight: bold;
     padding: 10px;
-    width: 100%;
     border-radius: 15px 0;
     text-transform: uppercase;
     letter-spacing: 2px;
