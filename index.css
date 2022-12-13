@@ -23,11 +23,13 @@ input[disabled] {
   font-style: italic;
 }
 
-/********
-HOME
-*********/
+/**
+ * 
+ *HOME
+ *
+ */
 
-.home {
+ .home {
   position: relative;
   background-size: cover;
   background-image: url(../images/home-low.png);
@@ -670,15 +672,19 @@ HOME
   .home .headerHome .navHome ul {
     display: flex;
     list-style: none;
-    width: 100vh;
-    margin: auto;
+    width: 100%;
   }
-
+  
   .home .headerHome .navHome ul li {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    max-width: 200px;
+  }
+  .home .headerHome .navHome {
     display: block;
     justify-content: center;
-    align-items: center;
-    margin-right: 10px;
   }
 
   .home .headerHome .navHome ul li .logo {

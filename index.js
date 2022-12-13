@@ -1,4 +1,4 @@
-// import Box from "./scripts/components/box.js";
+
 import { startCarousel } from "./scripts/components/carousel.js";
 import { details } from "./scripts/details.js";
 import { getAddress } from "./scripts/getAddress.js";
@@ -21,10 +21,6 @@ function initialize() {
   $search.onclick = () => {
     getAddress(document.querySelector(".get-cep").value);
   };
-
-  // Box(Pacote.SEMANAL)
-  // Box(Pacote.QUINZENAL)
-  // Box(Pacote.MENSAL)
 
   startCarousel({ selector: ".banner-image img" });
 }
