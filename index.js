@@ -5,11 +5,11 @@ import { getAddress } from "./src/getAddress.js";
 import { validateSignup } from "./src/validate.js";
 
 function initialize() {
-  const $galleryContainer = document.querySelector("#gallery .container");
+  const $galleryContainer = document.querySelector("#gallery .gallery__container");
   const $form = document.querySelector("#formCadastro");
   const $search = document.querySelector(".my-button");
-  const $detail = document.querySelector(".simuladorButton");
-  const $boxes = document.querySelector(".boxes");
+  const $detail = document.querySelector(".sectionCard__Button");
+  const $boxes = document.querySelector(".services__boxes");
 
   $form.onsubmit = (evt) => {
     evt.preventDefault();
