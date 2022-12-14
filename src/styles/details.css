@@ -57,7 +57,9 @@
 .sectionCard__valueCard{
   color: var(--color-secondary);
   font-size: 25px;
-  padding-top: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  
 }
 
 .sectionCard__Button {
@@ -111,13 +113,24 @@
   color: var(--color-primary);
   padding-top: 20px;
 }
+.textItem2 {
+  font-size: 12px;
+}
+.textItem {
+  font-size: 16px;
+}
 
 @media (min-width: 481px) and (max-width: 767px) {
   .sectionCard__container {
     display: block;
     align-items: center;
   }
-  
+  .textItem2 {
+    font-size: 10px;
+  }
+  .textItem {
+    font-size: 12px;
+  }
 
 }
 @media (max-width: 480px){
@@ -127,9 +140,29 @@
     align-items: center;}
 
     .textItem2 {
-      font-size: 10px;
+      font-size: 8px;
     }
     .textItem {
-      font-size: 14px;
+      font-size: 10px;
     }
+
+    .textItem3{
+      font-size: 10px;
+    }
+
+    .valueCard2{
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+
+    .sectionCard__Button {
+      background: var(--color-secondary);
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      margin: 10px;
+      padding: 5px;
+      text-align: center;
+      border-radius: 10px;
+      width: 50%;
 }

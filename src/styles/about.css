@@ -136,4 +136,7 @@
     flex-wrap: wrap;
     
   }
+  .experience__image{
+    width: 250px;
+  }
 }

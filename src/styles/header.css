@@ -1,9 +1,11 @@
+
 .home {
   position: relative;
   background-size: cover;
   background-image: url(../images/home-low.png);
   height: 100vh;
   background-attachment: fixed;
+  
 }
 
 .home__header {
@@ -19,6 +21,7 @@
   display: flex;
   list-style: none;
   width: 100%;
+  padding-left: 0px;
 }
 
 .home__nav ul li {
