@@ -46,7 +46,6 @@
   
   .home__sloganCenter {
     text-shadow: var(--color-primary-light) 0.02em 0.02em;
-    font-size: 100px;
     margin-block-end: 20px;
     margin-block-start:20px ;
   }
@@ -86,9 +85,8 @@
   
   .home__sloganCenter {
     text-shadow: var(--color-primary-light) 0.02em 0.02em;
-    font-size: 90px;
-    margin-block-end: 10px;
-    margin-block-start:10px ;
+    margin-block-end: 20px;
+    margin-block-start:20px ;
   }
   
   .home__sloganTop {
