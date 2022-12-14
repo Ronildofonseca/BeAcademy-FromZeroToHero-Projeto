@@ -1,0 +1,23 @@
+.carousel {
+  margin-left: 10%;
+  width: 80%;
+  height: 80vh;
+  position: relative;
+  align-items: center;
+  border: 3px solid var(--color-secondary);
+  border-radius: 10px;
+}
+
+.carousel img {
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  transition: opacity 2000ms;
+  border-radius: 10px;
+}
+
+.carousel img.active {
+  opacity: 1;
+}

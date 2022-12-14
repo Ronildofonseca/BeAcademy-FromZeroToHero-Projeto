@@ -1,8 +1,11 @@
+import createNode from "../helpers/createNode.js";
 import repeat from "../helpers/repeat.js";
 
 export default function ({ columns, items }) {
-  return /* html */ `
-    <table border="1" style="color: var(--color-primary)">
+  return createNode('table', {
+    border: 1,
+    style: "color: var(--color-primary)",
+    innerHTML: /* html */ `
       <thead>
         <tr>
           ${repeat(columns, (column) => {
@@ -21,6 +24,6 @@ export default function ({ columns, items }) {
           `;
         })}
       </tbody>
-    </table>
-  `;
+    `
+  });
 }

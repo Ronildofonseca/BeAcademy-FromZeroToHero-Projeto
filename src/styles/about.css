@@ -1,0 +1,117 @@
+.about {
+  background-color: var(--color-primary);
+}
+
+.about__container{
+  display: flex;
+}
+
+.about__timing {
+  width: 33%;
+  padding: 20px;
+  background-image: url(../images/marmitas.jpg);
+  position: relative;
+  top: -50px;
+}
+
+.about__overley {
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 40px 20px;
+}
+
+
+.about__text {
+  margin: 10px 0;
+}
+
+.about__text:after {
+  content: "•";
+  color: white;
+  display: block;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.about__text:last-of-type:after {
+  content: "|";
+}
+
+.about__titleHorario {
+  color: var(--color-secondary-light);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--color-primary-light);
+  width: fit-content;
+  margin: 0 auto 30px auto;
+  font-size: 30px;
+}
+
+.about__text h4 {
+  margin-top: 20px;
+  color: var(--color-secondary-light);
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.about__timing span {
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  display: block;
+}
+
+.about__experience {
+  width: 66%;
+  color: white;
+  margin-left: 7%;
+  margin-top: 100px;
+}
+
+.about__experience h2 {
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.about__experience h2:after {
+  display: block;
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: #a38f78;
+  margin: 20px 0;
+}
+
+.experience__text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.experience__text p {
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-weight: 100;
+}
+
+@media (max-width: 767px) {
+  .about__container{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .about__timing {
+    width: 100%;
+    height: 30%;
+    padding: 20px;
+    background-image: url(../images/marmitas.jpg);
+    position: relative;
+    margin-top: 50px;
+    grid-area: aside;
+  }
+
+  .experience__text {
+    display: block;
+    
+    
+  }
+}

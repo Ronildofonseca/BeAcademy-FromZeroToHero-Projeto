@@ -1,0 +1,25 @@
+.services {
+  padding: 100px 0;
+  text-align: center;
+  background-color: var(--color-secondary-light);
+}
+
+.services__title {
+  color: var(--color-primary);
+  font-weight: 400;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.services__boxes {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .services__boxes {
+    flex-wrap: wrap;
+    display: block;
+  }
+}

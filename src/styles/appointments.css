@@ -1,0 +1,78 @@
+.appointment {
+  padding: 100px 0;
+  background-color: var(--color-primary);
+}
+
+.appointment__title {
+  color: var(--color-secondary-light);
+  font-weight: 400;
+  font-size: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.appointment img {
+  margin: 0 auto;
+  display: block;
+}
+
+.appointment form {
+  margin: 80px 30px 0;
+}
+
+.appointment__personalData {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.appointment__inputWrapper {
+  width: 50%;
+  margin-right: 50px;
+}
+
+.appointment__labelWrapper {
+  font-weight: bold;
+}
+
+.appointment__inputWrapper:last-of-type {
+  margin-right: 0;
+}
+
+.appointment__personalData label {
+  display: block;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.appointment__personalData input,
+.appointment__personalData select,
+.appointment textarea {
+  padding: 10px;
+  outline: none;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.appointment textarea {
+  height: 100px;
+}
+
+.appointment button {
+  background-color: var(--color-secondary-light);
+  color: var(--color-primary);
+  padding: 15px 40px;
+  border: none;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.appointment button:hover {
+  transition: 1ms;
+  background: var(--color-secondary);
+  color: var(--color-secondary-light);
+}

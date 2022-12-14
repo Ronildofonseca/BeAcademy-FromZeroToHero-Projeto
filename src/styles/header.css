@@ -1,0 +1,177 @@
+.home {
+  position: relative;
+  background-size: cover;
+  background-image: url(../images/home-low.png);
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.home__header {
+  padding: 30px 0;
+}
+
+.home__nav {
+  display: flex;
+  justify-content: center;
+}
+
+.home__nav ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+}
+
+.home__nav ul li {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  max-width: 200px;
+}
+
+.home__nav ul li:first-of-type {
+  margin-left: auto;
+}
+
+.home__nav ul li:last-of-type {
+  margin-right: auto;
+}
+
+.home__logo {
+  width: 100px;
+  border: 3px solid var(--color-primary);
+  border-radius: 15px 0;
+  margin: 0 50px;
+  padding: 10px;
+  
+}
+
+.home__nav ul li a {
+  color: white;
+  background: var(--color-primary);
+  border-radius: 15px 0;
+  width: 90%;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.home__nav ul li a:hover {
+  border-bottom: 2px solid var(--color-primary-light);
+  color: var(--color-primary-light);
+}
+.buttonReturn {
+  width: 30px;
+  border: 1px solid var(--color-secondary-light);
+  border-radius: 50%;
+  background: var(--color-primary-light);
+  position: fixed;
+  margin-left: 5px;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .home {
+    position: relative;
+    background-size: cover;
+    background-image: url(../images/home-low.png);
+    height: 100vh;
+    background-attachment: fixed;
+  }
+
+  .home__header {
+    padding: 30px 0;
+  }
+
+  .home__nav {
+    display: block;
+    justify-content: center;
+  }
+
+  .home__nav ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+  }
+
+  .home__nav ul li {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    max-width: 200px;
+  }
+  
+  .home__logo {
+    width: 50px;
+    border: 3px solid var(--color-primary);
+    border-radius: 15px 0; 
+    margin: 0 20px;
+    padding: 5px;
+  }
+  .home__nav ul li a {
+    color: white;
+    background: var(--color-primary);
+    border-radius: 15px 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    position: relative;
+    background-size: cover;
+    background-image: url(../images/home-low.png);
+    height: 100vh;
+    background-attachment: fixed;
+    display: block;
+    justify-content: center;
+  }
+
+  .home__header {
+    padding: 30px 0;
+  }
+  .home__nav ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+  }
+
+  .home__nav ul li {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    max-width: 200px;
+  }
+  
+
+  .home__logo  {
+    border: 3px solid var(--color-primary);
+    border-radius: 15px 0;
+    margin: 0 20px;
+    padding: 5px;
+    width: 40px;
+    height: 30px;
+  }
+
+  .home__nav  ul li a {
+    color: white;
+    background: var(--color-primary);
+    border-radius: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 8px;
+    font-weight: bold;
+    padding: 5px;
+  }
+}

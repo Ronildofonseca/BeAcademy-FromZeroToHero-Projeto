@@ -1,5 +1,5 @@
 import Table from "./components/table.js";
-import * as Pratos from "../constants/pratos.js";
+import Pratos from "./jsons/pratos.json" assert { type: "json" };
 
 export function details() {
   const $bundle = document.querySelector("#quantPacotes");
@@ -16,19 +16,19 @@ export function details() {
 
   switch (opcaoTexto1) {
     case "Semanal":
-      $data.innerHTML = Table(Pratos.SEMANAL);
+      $data.replaceChildren(Table(Pratos.SEMANAL));
       $info.innerHTML = `Pacote com 10 Refeições, por apenas <br> R$ ${valueSemanal}`;
       $desc.innerHTML = `Valor total a pagar: R$ ${parcelaTrans * valueSemanal},00`;
       break;
 
     case "Quinzenal":
-      $data.innerHTML = Table(Pratos.QUINZENAL);
+      $data.replaceChildren(Table(Pratos.QUINZENAL));
       $info.innerHTML = `Pacote com 20 Refeições, por apenas <br> R$ ${valueQuinzenal}`;
       $desc.innerHTML = `Valor total a pagar: R$ ${parcelaTrans * valueQuinzenal},00`;
       break;
 
     case "Mensal":
-      $data.innerHTML = Table(Pratos.MENSAL);
+      $data.replaceChildren(Table(Pratos.MENSAL));
       $info.innerHTML = `Pacote com 40 Refeições, por apenas <br> R$ ${valueMensal}`;
       $desc.innerHTML = `Valor total a pagar: R$ ${parcelaTrans * valueMensal},00`;
       break;
