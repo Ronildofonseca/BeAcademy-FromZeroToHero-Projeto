@@ -22,4 +22,9 @@
     flex-wrap: wrap;
     display: block;
   }
+  .services__box {
+    border: 3px solid var(--color-primary);
+    padding: 30px 10px;
+    margin: 15px;
+  }
 }

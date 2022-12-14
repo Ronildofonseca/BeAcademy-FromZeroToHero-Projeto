@@ -1,6 +1,8 @@
+
 .appointment {
   padding: 100px 0;
   background-color: var(--color-primary);
+
 }
 
 .appointment__title {
@@ -75,4 +77,28 @@
   transition: 1ms;
   background: var(--color-secondary);
   color: var(--color-secondary-light);
+}
+
+@media (max-width: 767px){
+
+.appointment__personalData {
+  display: block;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.appointment__inputWrapper {
+  width: 90%;
+}
+
+.appointment button {
+  background-color: var(--color-secondary-light);
+  color: var(--color-primary);
+  padding: 10px 15px;
+  border: none;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+}
 }

@@ -4,16 +4,15 @@
   padding: 0;
 }
 
-.sectionCard__title {
+.sectionCard{
   background: var(--color-primary-light);
   color: var(--color-secondary-light);
-  font-size: 50px;
-  font-weight: 400;
-  margin-bottom: 10px;
-  padding: 10px;
   text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  
+  
 }
-
 .sectionCard__text {
   text-align: center;
   font-weight: bold;
@@ -113,5 +112,24 @@
   padding-top: 20px;
 }
 
+@media (min-width: 481px) and (max-width: 767px) {
+  .sectionCard__container {
+    display: block;
+    align-items: center;
+  }
+  
 
+}
+@media (max-width: 480px){
 
+  .sectionCard__container {
+    display: block;
+    align-items: center;}
+
+    .textItem2 {
+      font-size: 10px;
+    }
+    .textItem {
+      font-size: 14px;
+    }
+}

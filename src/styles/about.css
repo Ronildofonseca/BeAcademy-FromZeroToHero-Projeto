@@ -110,8 +110,30 @@
   }
 
   .experience__text {
-    display: block;
+    flex-wrap: wrap;
     
+  }
+  
+}
+@media (max-width: 481px){
+
+  .about__container{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .about__timing {
+    width: 100%;
+    height: 30%;
+    padding: 20px;
+    background-image: url(../images/marmitas.jpg);
+    position: relative;
+    margin-top: 50px;
+    grid-area: aside;
+  }
+
+  .experience__text {
+    flex-wrap: wrap;
     
   }
 }
