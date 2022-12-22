@@ -63,15 +63,15 @@
           <a href="#home">
             <img
               src="src/images/angle-double-up.svg"
-              alt="ButtonReturn"
-              class="buttonReturn"
+              alt="button-return"
+              class="button-return"
             />
           </a>
         </header>
         <div class="home__banner">
-          <span class="home__sloganTop">Diversidade e Excelência no Sabor </span>
-          <h1 class="home__sloganCenter">Low Carb</h1>
-          <span class="home__sloganBottom">A SUA DIETA DE TODOS OS DIAS!</span>
+          <span class="home__slogan-top">Diversidade e Excelência no Sabor </span>
+          <h1 class="home__slogan-center">Low Carb</h1>
+          <span class="home__slogan-bottom">A SUA DIETA DE TODOS OS DIAS!</span>
           <p>
             <img src="src/images/prato.png" alt="Prato e talheres" />
           </p>
@@ -81,7 +81,7 @@
         <div class="about__container">
           <div class="about__timing">
             <div class="about__overley">
-              <h2 class="about__titleHorario">Horários</h2>
+              <h2 class="about__title-horario">Horários</h2>
               <div class="about__text">
                 <h4 class="dia">Segunda-feira à Sexta-feira</h4>
                 <span> 08:00 AM - 17:00 PM </span>
@@ -146,39 +146,39 @@
         <div class="services__boxes"></div>
       </section>
       
-      <section id="detalhar" class="sectionCard">
+      <section id="detalhar" class="section-card">
         <h2>Pacotes Detalhados</h2>
-        <p class="sectionCard__text">
+        <p class="section-card__text">
           Pacotes que cabem no seu bolso e que se adequam a sua necessidade!
         </p>
-        <section class="sectionCard__container">
-          <div class="sectionCard__dados">
-            <label class="sectionCard__pacotes" for="">Tipo de Pacote</label>
-            <select class="sectionCard__input" name="typeSale" id="typeSale">
+        <section class="section-card__container">
+          <div class="section-card__dados">
+            <label class="section-card__pacotes" for="">Tipo de Pacote</label>
+            <select class="section-card__input" name="typeSale" id="typeSale">
               <option value="semanal">Semanal</option>
               <option value="quinzenal">Quinzenal</option>
               <option value="mensal">Mensal</option>
             </select>
             <br />
             <br />
-            <label class="sectionCard__descrition" for="">Quantidade de Pacotes </label>
+            <label class="section-card__descrition" for="">Quantidade de Pacotes </label>
             <input
-              class="sectionCard__input"
+              class="section-card__input"
               name="detalhar"
               id="quantPacotes"
               type="text"
               placeholder="Digite a  quantidade de pacotes"
             />
-            <button class="sectionCard__Button" name="detalhar">Detalhar</button>
+            <button class="section-card__Button" name="detalhar">Detalhar</button>
           </div>
-          <div class="sectionCard__dadosSecondary">
-            <aside class="sectionCard__aside">
-              <h1 class="sectionCard__titleDetail">Menu</h1>
+          <div class="section-card__dados-secondary">
+            <aside class="section-card__aside">
+              <h1 class="section-card__title-detail">Menu</h1>
               <p><span id="textItem2" class="textItem2"></span></p>
-              <p class="sectionCard__valueCard">
+              <p class="section-card__value-card">
                 <span id="textItem" class="textItem"></span>
               </p>
-              <p class="valueCard2">
+              <p class="value-card2">
                 <span id="textItem3" class="textItem3"></span>
               </p>
             </aside>
@@ -190,9 +190,9 @@
           <h2 class="appointment__title">Faça seu Cadastro</h2>
           <img src="src/images/pedido-online (1).png" alt="Faça o cadastro" />
           <form id="formCadastro">
-            <div class="appointment__personalData">
-              <div class="appointment__inputWrapper">
-                <label class="appointment__labelWrapper">Cep</label>
+            <div class="appointment__personal-data">
+              <div class="appointment__input-wrapper">
+                <label class="appointment__label-wrapper">Cep</label>
                 <input
                   class="get-cep"
                   name="cep"
@@ -205,9 +205,9 @@
                 <button class="my-button">Pesquisar</button>
               </div>
             </div>
-            <div class="appointment__personalData">
-              <div class="appointment__inputWrapper">
-                <label class="appointment__labelWrapper">Rua</label>
+            <div class="appointment__personal-data">
+              <div class="appointment__input-wrapper">
+                <label class="appointment__label-wrapper">Rua</label>
                 <input
                   class="logradouro"
                   name="rua"
@@ -216,8 +216,8 @@
                   placeholder="Rua"
                 />
               </div>
-              <div class="appointment__inputWrapper">
-                <label class="appointment__labelWrapper">Bairro</label>
+              <div class="appointment__input-wrapper">
+                <label class="appointment__label-wrapper">Bairro</label>
                 <input
                   class="bairro"
                   name="bairro"
@@ -226,8 +226,8 @@
                   placeholder="Bairro"
                 />
               </div>
-              <div class="appointment__inputWrapper">
-                <label class="appointment__labelWrapper">Cidade</label>
+              <div class="appointment__input-wrapper">
+                <label class="appointment__label-wrapper">Cidade</label>
                 <input
                   class="cidade"
                   name="cidade"
@@ -236,8 +236,8 @@
                   placeholder="Cidade"
                 />
               </div>
-              <div class="appointment__inputWrapper">
-                <label class="appointment__labelWrapper">Número</label>
+              <div class="appointment__input-wrapper">
+                <label class="appointment__label-wrapper">Número</label>
                 <input
                   name="numero"
                   type="text"
@@ -247,9 +247,9 @@
                 />
               </div>
             </div>
-            <div class="appointment__personalData">
-              <div class="appointment__inputWrapper">
-                <label class="appointment__labelWrapper">Nome</label>
+            <div class="appointment__personal-data">
+              <div class="appointment__input-wrapper">
+                <label class="appointment__label-wrapper">Nome</label>
                 <input
                   name="nome"
                   type="text"
@@ -259,8 +259,8 @@
                 />
                 <label id="erro" class="erro"></label>
               </div>
-              <div class="appointment__inputWrapper">
-                <label class="appointment__labelWrapper">Sobrenome</label>
+              <div class="appointment__input-wrapper">
+                <label class="appointment__label-wrapper">Sobrenome</label>
                 <input
                   name="sobrenome"
                   type="text"
@@ -270,8 +270,8 @@
                 />
                 <label id="erro2" class="erro"></label>
               </div>
-              <div class="appointment__inputWrapper">
-                <label class="appointment__labelWrapper">E-mail</label>
+              <div class="appointment__input-wrapper">
+                <label class="appointment__label-wrapper">E-mail</label>
                 <input
                   name="email"
                   type="email"
@@ -280,8 +280,8 @@
                 />
                 <label id="erro3" class="erro"></label>
               </div>
-              <div class="appointment__inputWrapper">
-                <label class="appointment__labelWrapper" min-width="11" max-width="11"
+              <div class="appointment__input-wrapper">
+                <label class="appointment__label-wrapper" min-width="11" max-width="11"
                   >Telefone</label
                 >
                 <input
@@ -294,9 +294,9 @@
                 <label id="erro4" class="erro"></label>
               </div>
             </div>
-            <div class="appointment__personalData">
-              <div class="appointment__inputWrapper">
-                <label class="appointment__labelWrapper">Mensagem</label>
+            <div class="appointment__personal-data">
+              <div class="appointment__input-wrapper">
+                <label class="appointment__label-wrapper">Mensagem</label>
                 <textarea
                   name="mensagem"
                   id="message"

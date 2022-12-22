@@ -5,14 +5,14 @@
   
 }
 
-.home__sloganCenter {
+.home__slogan-center {
   text-shadow: var(--color-primary-light) 0.02em 0.02em;
   font-size: 120px;
   margin-block-end: 20px;
   margin-block-start:20px ;
 }
 
-.home__sloganTop {
+.home__slogan-top {
   color: var(--color-primary);
   background: var(--color-primary-light);
   display: block;
@@ -26,7 +26,7 @@
 }
 
 
-.home__sloganBottom {
+.home__slogan-bottom {
   
   background: var(--color-primary-light);
   border-radius: 0 15px;
@@ -44,13 +44,13 @@
     
   }
   
-  .home__sloganCenter {
+  .home__slogan-center {
     text-shadow: var(--color-primary-light) 0.02em 0.02em;
     margin-block-end: 20px;
     margin-block-start:20px ;
   }
   
-  .home__sloganTop {
+  .home__slogan-top {
     color: var(--color-primary);
     background: var(--color-primary-light);
     display: block;
@@ -64,7 +64,7 @@
   }
   
   
-  .home__sloganBottom {
+  .home__slogan-bottom {
     background: var(--color-primary-light);
     border-radius: 0 15px;
     font-size: 14px;
@@ -83,13 +83,13 @@
     
   }
   
-  .home__sloganCenter {
+  .home__slogan-center {
     text-shadow: var(--color-primary-light) 0.02em 0.02em;
     margin-block-end: 20px;
     margin-block-start:20px ;
   }
   
-  .home__sloganTop {
+  .home__slogan-top {
     color: var(--color-primary);
     background: var(--color-primary-light);
     display: block;
@@ -103,7 +103,7 @@
   }
   
   
-  .home__sloganBottom {
+  .home__slogan-bottom {
     background: var(--color-primary-light);
     border-radius: 0 15px;
     font-size: 12px;

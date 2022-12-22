@@ -18,7 +18,7 @@ export default function ({ title, message }) {
       </p>
       <p>
         <span class="box__details">
-          Clique aqui e veja mais detalhes de nosso Pacote Semanal
+          Clique aqui e veja mais detalhes de nossos Pacotes
         </span>
       </p>
       <a class="box__button" href="#detalhar">Detalhar</a>

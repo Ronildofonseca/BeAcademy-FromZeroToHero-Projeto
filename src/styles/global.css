@@ -27,7 +27,7 @@ input[disabled] {
     flex-wrap: wrap;
   }
 
-  .sectionCard__container {
+  .section-card__container {
     display: block;
     align-items: center;
   }

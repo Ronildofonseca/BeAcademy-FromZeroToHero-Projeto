@@ -8,7 +8,7 @@ function initialize() {
   const $galleryContainer = document.querySelector("#gallery .gallery__container");
   const $form = document.querySelector("#formCadastro");
   const $search = document.querySelector(".my-button");
-  const $detail = document.querySelector(".sectionCard__Button");
+  const $detail = document.querySelector(".section-card__Button");
   const $boxes = document.querySelector(".services__boxes");
 
   $form.onsubmit = (evt) => {
